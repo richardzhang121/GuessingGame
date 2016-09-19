@@ -41,7 +41,9 @@ int main()
         cin >> input;
         if (input[0] == 'Y') {
           stillPlaying = true;
-          guess = -1; //changes guess value, reintializes the game
+          guess = -1;
+		  initialGuess = rand() % 101;	
+		  counter = 0; //changes guess value, reintializes the game
         }
         else {
           stillPlaying = false; //if false, exit game
